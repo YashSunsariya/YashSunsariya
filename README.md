@@ -1,151 +1,117 @@
-<div align="center">
+<svg width="1200" height="300" viewBox="0 0 1200 300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="50%" r="75%">
+      <stop offset="0%" stop-color="#1a0022"/>
+      <stop offset="55%" stop-color="#0a0008"/>
+      <stop offset="100%" stop-color="#000000"/>
+    </radialGradient>
+    <linearGradient id="webLine" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6A0DAD" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#FF3131" stop-opacity="0.35"/>
+    </linearGradient>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="softGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="2"/>
+    </filter>
+  </defs>
 
-<img src="https://capsule-render.vercel.app/api?type=venom&color=0:000000,50:6A0DAD,100:FF0000&height=250&section=header&text=YASH%20SUNSARIYA&fontSize=55&fontColor=FF3131&animation=fadeIn&fontAlignY=38&desc=Spinning%20Code%20Into%20Digital%20Webs&descAlignY=58&descSize=18&descColor=B48EAD" width="100%"/>
+  <rect width="1200" height="300" fill="url(#bg)"/>
 
-<img src="https://readme-typing-svg.demolab.com?font=Poppins&weight=700&size=26&duration=3000&pause=900&color=FF3131&center=true&vCenter=true&width=700&lines=%F0%9F%95%B7%EF%B8%8F+MERN+Stack+Developer;%F0%9F%95%B8%EF%B8%8F+Cyber+Security+Student;Weaving+Scalable+Web+Applications;Lurking+in+the+Shadows+of+Clean+Code" />
+  <!-- Corner web: top-left -->
+  <g stroke="url(#webLine)" stroke-width="1" fill="none" opacity="0.55">
+    <line x1="0" y1="0" x2="260" y2="0"/>
+    <line x1="0" y1="0" x2="0" y2="220"/>
+    <line x1="0" y1="0" x2="180" y2="180"/>
+    <line x1="0" y1="0" x2="260" y2="90"/>
+    <line x1="0" y1="0" x2="90" y2="220"/>
+    <path d="M 40 0 Q 40 40 0 40" />
+    <path d="M 90 0 Q 90 90 0 90" />
+    <path d="M 150 0 Q 150 150 0 150" />
+    <path d="M 220 0 Q 220 220 0 220" />
+  </g>
 
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0:000000,100:6A0DAD&height=3&width=1000" />
+  <!-- Corner web: top-right -->
+  <g stroke="url(#webLine)" stroke-width="1" fill="none" opacity="0.55">
+    <line x1="1200" y1="0" x2="940" y2="0"/>
+    <line x1="1200" y1="0" x2="1200" y2="220"/>
+    <line x1="1200" y1="0" x2="1020" y2="180"/>
+    <line x1="1200" y1="0" x2="940" y2="90"/>
+    <line x1="1200" y1="0" x2="1110" y2="220"/>
+    <path d="M 1160 0 Q 1160 40 1200 40" />
+    <path d="M 1110 0 Q 1110 90 1200 90" />
+    <path d="M 1050 0 Q 1050 150 1200 150" />
+    <path d="M 980 0 Q 980 220 1200 220" />
+  </g>
 
-</div>
+  <!-- Corner web: bottom-left -->
+  <g stroke="url(#webLine)" stroke-width="1" fill="none" opacity="0.4">
+    <line x1="0" y1="300" x2="220" y2="300"/>
+    <line x1="0" y1="300" x2="0" y2="120"/>
+    <line x1="0" y1="300" x2="150" y2="160"/>
+    <path d="M 30 300 Q 30 270 0 270" />
+    <path d="M 90 300 Q 90 220 0 220" />
+    <path d="M 160 300 Q 160 170 0 170" />
+  </g>
 
-<br/>
+  <!-- Corner web: bottom-right -->
+  <g stroke="url(#webLine)" stroke-width="1" fill="none" opacity="0.4">
+    <line x1="1200" y1="300" x2="980" y2="300"/>
+    <line x1="1200" y1="300" x2="1200" y2="120"/>
+    <line x1="1200" y1="300" x2="1050" y2="160"/>
+    <path d="M 1170 300 Q 1170 270 1200 270" />
+    <path d="M 1110 300 Q 1110 220 1200 220" />
+    <path d="M 1040 300 Q 1040 170 1200 170" />
+  </g>
 
-## 🕸️ About Me
+  <!-- Hanging thread + spider (top right, animated bob) -->
+  <g>
+    <line x1="1000" y1="0" x2="1000" y2="58" stroke="#B48EAD" stroke-width="1" opacity="0.8"/>
+    <g id="spider" transform="translate(1000,68)">
+      <animateTransform attributeName="transform" type="translate"
+        values="1000,68; 1000,78; 1000,68" dur="3.2s" repeatCount="indefinite" additive="sum"/>
+      <!-- legs -->
+      <g stroke="#FF3131" stroke-width="2" fill="none" opacity="0.9">
+        <path d="M -14 -4 Q -22 -10 -30 -14"/>
+        <path d="M -14 2 Q -24 4 -32 6"/>
+        <path d="M -14 8 Q -22 14 -28 22"/>
+        <path d="M -12 12 Q -18 20 -22 28"/>
+        <path d="M 14 -4 Q 22 -10 30 -14"/>
+        <path d="M 14 2 Q 24 4 32 6"/>
+        <path d="M 14 8 Q 22 14 28 22"/>
+        <path d="M 12 12 Q 18 20 22 28"/>
+      </g>
+      <!-- body -->
+      <ellipse cx="0" cy="10" rx="9" ry="11" fill="#0D0D0D" stroke="#FF3131" stroke-width="1.5"/>
+      <circle cx="0" cy="-5" r="6" fill="#0D0D0D" stroke="#FF3131" stroke-width="1.5"/>
+      <circle cx="-2.5" cy="-6" r="1.2" fill="#FF3131"/>
+      <circle cx="2.5" cy="-6" r="1.2" fill="#FF3131"/>
+    </g>
+  </g>
 
-```js
-const yash = {
-    role: "MERN Stack Developer 🕷️",
-    education: "B.Tech CSE (Cyber Security & Ethical Hacking) 🎓",
-    focus: "Web Security & Backend Development 🔐",
-    currentWeb: "Building production-ready web applications 🌐",
-    philosophy: "Clean UI • Scalable Backend • Secure APIs ⚡",
-};
-```
+  <!-- Title -->
+  <text x="600" y="150" text-anchor="middle" font-family="Poppins, Verdana, sans-serif"
+        font-size="54" font-weight="700" fill="#FF3131" filter="url(#glow)">
+    YASH SUNSARIYA
+    <animate attributeName="opacity" values="0.75;1;0.75" dur="2.5s" repeatCount="indefinite"/>
+  </text>
 
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0:6A0DAD,100:000000&height=3&width=1000" />
+  <!-- Subtitle -->
+  <text x="600" y="195" text-anchor="middle" font-family="Poppins, Verdana, sans-serif"
+        font-size="20" fill="#B48EAD" filter="url(#softGlow)">
+    🕷️ Spinning Code Into Digital Webs 🕸️
+  </text>
 
-<br/>
-
-## 🕷️ Tech Stack — The Web I Weave
-
-### Frontend
-<p align="left">
-<img src="https://skillicons.dev/icons?i=html,css,js,react,redux,bootstrap,tailwind,vite&theme=dark" />
-</p>
-
-### Backend
-<p align="left">
-<img src="https://skillicons.dev/icons?i=nodejs,express,mongodb,firebase&theme=dark" />
-</p>
-
-### Programming
-<p align="left">
-<img src="https://skillicons.dev/icons?i=javascript,python,cpp&theme=dark" />
-</p>
-
-### Tools & Weapons
-<p align="left">
-<img src="https://skillicons.dev/icons?i=git,github,vscode,postman,docker,figma,linux&theme=dark" />
-</p>
-
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0:000000,100:6A0DAD&height=3&width=1000" />
-
-<br/>
-
-## 🕸️ Featured Project
-
-<table>
-<tr>
-<td width="100%">
-
-### 🌞 NGN E-Commerce Platform
-*A complete production-ready MERN e-commerce platform for the Solar Industry.*
-
-<img src="https://img.shields.io/badge/Status-Production--Ready-FF3131?style=for-the-badge&logo=vercel&logoColor=white&labelColor=000000"/>
-<img src="https://img.shields.io/badge/Stack-MERN-6A0DAD?style=for-the-badge&logo=mongodb&logoColor=white&labelColor=000000"/>
-
-**Threads spun into this build:**
-
-| 🕷️ Core | 🕷️ Commerce | 🕷️ Infra |
-|---|---|---|
-| Admin Dashboard | Product Management | Cloudinary Image Upload |
-| JWT Authentication | Categories & Brands | Inventory System |
-| Role Based Access | Orders & Customers | REST API |
-| Responsive Design | Blogs | — |
-
-</td>
-</tr>
-</table>
-
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0:6A0DAD,100:000000&height=3&width=1000" />
-
-<br/>
-
-## 📈 GitHub Stats — Web Activity
-
-<p align="center">
-<img height="170" src="https://github-readme-stats.vercel.app/api?username=YashSunsariya&show_icons=true&theme=radical&hide_border=true&bg_color=0D0D0D&title_color=FF3131&icon_color=6A0DAD&text_color=C9C9C9"/>
-<img height="170" src="https://github-readme-streak-stats.herokuapp.com/?user=YashSunsariya&theme=radical&hide_border=true&background=0D0D0D&ring=FF3131&fire=6A0DAD&currStreakLabel=FF3131"/>
-</p>
-
-<p align="center">
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=YashSunsariya&layout=compact&theme=radical&hide_border=true&bg_color=0D0D0D&title_color=FF3131&text_color=C9C9C9"/>
-</p>
-
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0:000000,100:6A0DAD&height=3&width=1000" />
-
-<br/>
-
-## 🏆 Trophy Case — Caught in the Web
-
-<p align="center">
-<img src="https://github-profile-trophy.vercel.app/?username=YashSunsariya&theme=radical&row=1&column=6&no-bg=true&no-frame=true"/>
-</p>
-
-<br/>
-
-## 🕸️ Contribution Web
-
-<p align="center">
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=YashSunsariya&theme=redical&bg_color=0D0D0D&color=FF3131&line=6A0DAD&point=FFFFFF&hide_border=true"/>
-</p>
-
-> 💡 **Bonus 3D touch:** add the [Contribution Snake](https://github.com/Platane/snk) GitHub Action to your repo — it renders your contribution graph as an animated snake (or in this case... a spider crawling its web) at the top of your profile.
-
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0:6A0DAD,100:000000&height=3&width=1000" />
-
-<br/>
-
-## 🌐 Connect With Me
-
-<p align="center">
-<a href="https://github.com/YashSunsariya">
-<img src="https://img.shields.io/badge/GitHub-000000?style=for-the-badge&logo=github&logoColor=FF3131"/>
-</a>
-<a href="https://linkedin.com/in/YOUR-LINKEDIN">
-<img src="https://img.shields.io/badge/LinkedIn-000000?style=for-the-badge&logo=linkedin&logoColor=6A0DAD"/>
-</a>
-<a href="mailto:YOUR_EMAIL@gmail.com">
-<img src="https://img.shields.io/badge/Gmail-000000?style=for-the-badge&logo=gmail&logoColor=FF3131"/>
-</a>
-</p>
-
-<br/>
-
-## 🕷️ Quote
-
-<div align="center">
-
-> *"A spider doesn't build its web in a day — it spins, thread by thread, until the whole thing holds."*
->
-> **Consistency beats motivation. Build. Learn. Improve.**
-
-</div>
-
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0:000000,100:6A0DAD&height=3&width=1000" />
-
-<p align="center">
-<img src="https://komarev.com/ghpvc/?username=YashSunsariya&label=Caught%20in%20the%20Web%20%F0%9F%95%B8%EF%B8%8F&color=FF3131&style=for-the-badge&labelColor=000000"/>
-</p>
-
-<img src="https://capsule-render.vercel.app/api?type=venom&color=0:000000,50:6A0DAD,100:FF0000&height=120&section=footer&animation=fadeIn" width="100%"/>
+  <!-- small web accents near title -->
+  <g stroke="#6A0DAD" stroke-width="1" fill="none" opacity="0.35">
+    <path d="M 300 220 Q 360 200 420 220"/>
+    <path d="M 300 220 Q 360 240 420 220"/>
+    <path d="M 780 220 Q 840 200 900 220"/>
+    <path d="M 780 220 Q 840 240 900 220"/>
+  </g>
+</svg>
