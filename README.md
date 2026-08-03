@@ -110,7 +110,7 @@ const yash = {
 <img src="https://github-readme-activity-graph.vercel.app/graph?username=YashSunsariya&theme=redical&bg_color=0D0D0D&color=FF3131&line=6A0DAD&point=FFFFFF&hide_border=true"/>
 </p>
 
-> 💡 **Bonus 3D touch:** add the [Contribution Snake](https://github.com/Platane/snk) GitHub Action to your repo — it renders your contribution graph as an animated snake (or in this case... a spider crawling its web) at the top of your profile.
+>
 
 <img src="https://capsule-render.vercel.app/api?type=rect&color=0:6A0DAD,100:000000&height=3&width=1000" />
 
